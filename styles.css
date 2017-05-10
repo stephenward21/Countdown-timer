@@ -1,0 +1,28 @@
+body {
+	height: 100vh;
+	background: url("https://s-media-cache-ak0.pinimg.com/originals/2e/1e/3c/2e1e3cb69278c491e89ae079d49cecd2.jpg") no-repeat center;
+	background-size: cover;
+	text-align: center
+}
+
+h1 {
+	color: #535;
+	font-size: 40px;
+	margin: 40px 0px 20px;
+}
+
+
+#timer-div{
+	background-color: #00ECB9;
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+}
+
+.time-unit, .time-unit > span {
+	padding: 10px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
