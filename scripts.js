@@ -29,16 +29,33 @@ Timer.prototype.updateTimer = function(){
 
 }
 
+
 // var endDate = new Date();
-var endDate = new Date(Date.parse('July 4, 2017'));
+
+var enterDate = 'Today'
+var enterDatePicker = document.getElementById("enter-time");
+
+enterDatePicker.addEventListener('change', function(event){
+	// console.log(event);
+	enterDate = enterDatePicker.value
+	console.log(enterDate)
+});
+var enterData = document.getElementById("button-Time");
+enterData.addEventListener('click', function(event){
+	var endDate = new Date(Date.parse(enterDate));
 // console.log(endDate);
 
-var fourthOfJulyTimer = new Timer('timer-div', endDate);
-setInterval(
-	function(){
-		fourthOfJulyTimer.updateTimer();
-	}, 1000
 
-)
+	var fourthOfJulyTimer = new Timer('timer-div', endDate);
+	setInterval(
+		function(){
+			fourthOfJulyTimer.updateTimer();
+		}, 1000
+		)
+});
+
+
+
+
 
 	
